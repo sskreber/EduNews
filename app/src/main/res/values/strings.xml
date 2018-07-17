@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EduNews</string>
+
+    <string name="no_news">No news articles found. </string>
+
+    <string name="no_internet_connection">Oops! Check your internet connection&#8230;</string>
+</resources>

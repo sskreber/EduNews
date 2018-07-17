@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorLightGrey"
+    android:orientation="vertical"
+    android:padding="@dimen/list_item_layout_padding">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/ListItem"
+        android:layout_gravity="center_vertical"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium"
+        android:maxLines="2"
+        android:textSize="@dimen/fontsize_large"
+        tools:text="very long title indeed this is, very long indeed" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/publication_date"
+            style="@style/ListItem"
+            android:textSize="@dimen/fontsize_medium_plus"
+            tools:text="2018-01-01" />
+
+        <TextView
+            android:id="@+id/section"
+            style="@style/ListItem"
+            android:paddingLeft="@dimen/list_item_left_padding_large"
+            android:paddingStart="@dimen/list_item_left_padding_large"
+            android:textAllCaps="true"
+            android:textColor="@color/colorSectionName"
+            android:textSize="@dimen/fontsize_small"
+            tools:text="Education" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/author_or_source"
+        style="@style/ListItem"
+        android:paddingTop="@dimen/list_item_padding_top"
+        android:textColor="@color/colorDarkGrey"
+        android:textSize="@dimen/fontsize_medium"
+        android:textStyle="italic"
+        tools:text="Editorial" />
+
+</LinearLayout>
