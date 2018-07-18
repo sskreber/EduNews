@@ -6,4 +6,4 @@ Its newest version (EduNews+ vs the previous EduNews) offers a Settings option t
 - choose whether the articles should be ordered by newest or oldest.
 
 Therefore, the newest version of the app offers articles from a widr range of topics and not just Education, 
-but Education remains the default option and the most salient among the choices offered.
+but Education remains the default option and the most salient one among the choices offered.
