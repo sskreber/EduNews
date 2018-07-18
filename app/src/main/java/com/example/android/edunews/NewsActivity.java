@@ -23,6 +23,8 @@ import java.util.List;
 
 public class NewsActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<List<News>> {
 
+    String myApiKey = BuildConfig.MY_GUARDIAN_API_KEY;
+
     public static final String LOG_TAG = NewsActivity.class.getName();
     private static final int NEWS_LOADER_ID = 1;
     private static final String GUARDIAN_API_URL = "https://content.guardianapis.com/search";
@@ -99,8 +101,8 @@ public class NewsActivity extends AppCompatActivity implements LoaderManager.Loa
         uriBuilder.appendQueryParameter("from-date", chosenYear + "-01-01");
 
         uriBuilder.appendQueryParameter("page-size", MAX_PAGE_SIZE_SET_BY_GUARDIAN);
-        uriBuilder.appendQueryParameter("api-key", "d851c653-799c-4661-a220-68f7661653c6");
-
+        uriBuilder.appendQueryParameter("api-key", myApiKey);
+//        "d851c653-799c-4661-a220-68f7661653c6"
         return new NewsLoader(this, uriBuilder.toString());
     }
 
