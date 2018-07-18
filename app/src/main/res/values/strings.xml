@@ -4,4 +4,53 @@
     <string name="no_news">No news articles found. </string>
 
     <string name="no_internet_connection">Oops! Check your internet connection&#8230;</string>
+
+    <string name="settings_menu_item">Settings</string>
+    <string name="settings_title">News Settings</string>
+
+    <!-- for section preferences: labels for each news section[CHAR LIMIT=20] -->
+
+    <string name="settings_section_label">Section</string>
+    <string name="settings_section_key" translatable="false">section</string>
+    <string name="settings_section_default" translatable="false">education</string>
+
+    <string name="settings_environment_label">Environment</string>
+    <string name="settings_environment_value" translatable="false">environment</string>
+
+    <string name="settings_culture_label">Culture</string>
+    <string name="settings_culture_value" translatable="false">culture</string>
+
+    <string name="settings_politics_label">Politics</string>
+    <string name="settings_politics_value" translatable="false">politics</string>
+
+    <string name="settings_society_label">Society</string>
+    <string name="settings_society_value" translatable="false">society</string>
+
+    <string name="settings_world_label">World</string>
+    <string name="settings_world_value" translatable="false">world</string>
+
+    <string name="settings_education_label">Education</string>
+    <string name="settings_education_value" translatable="false">education</string>
+
+    <string name="settings_business_label">Business</string>
+    <string name="settings_business_value" translatable="false">business</string>
+
+    <string name="settings_science_label">Science</string>
+    <string name="settings_science_value" translatable="false">science</string>
+
+    <string name="settings_technology_label">Technology</string>
+    <string name="settings_technology_value" translatable="false">technology</string>
+
+    <!-- for ordering by date preferences [CHAR LIMIT=20]-->
+
+    <string name="settings_order_by_label">Order by</string>
+    <string name="settings_order_by_key" translatable="false">orderBy</string>
+    <string name="settings_order_by_default" translatable="false">newest</string>
+
+    <string name="settings_order_by_oldest_label">Oldest</string>
+    <string name="settings_order_by_oldest_value" translatable="false">oldest</string>
+
+    <string name="settings_order_by_newest_label">Most recent</string>
+    <string name="settings_order_by_newest_value" translatable="false">newest</string>
+
 </resources>

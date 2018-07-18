@@ -37,6 +37,10 @@ public final class RequestManager {
     private static final int TRIMMED_PUBLICATION_DATE_LIST_MONTH_INDEX = 1;
     private static final int TRIMMED_PUBLICATION_DATE_LIST_DAY_INDEX = 2;
 
+    private static final int URL_CONNECTION_READ_TIMEOUT_IN_MS = 10000;
+    private static final int URL_CONNECTION_CONNECT_TIMEOUT_IN_MS = 15000;
+    private static final String REQUEST_METHOD_GET = "GET";
+
     private RequestManager() {
     }
 
@@ -111,12 +115,12 @@ public final class RequestManager {
         InputStream inputStream = null;
         try {
             httpUrlConnection = (HttpURLConnection) url.openConnection();
-            httpUrlConnection.setRequestMethod("GET");
-            httpUrlConnection.setReadTimeout(10000);
-            httpUrlConnection.setConnectTimeout(15000);
+            httpUrlConnection.setRequestMethod(REQUEST_METHOD_GET);
+            httpUrlConnection.setReadTimeout(URL_CONNECTION_READ_TIMEOUT_IN_MS);
+            httpUrlConnection.setConnectTimeout(URL_CONNECTION_CONNECT_TIMEOUT_IN_MS);
             httpUrlConnection.connect();
 
-            if (httpUrlConnection.getResponseCode() == 200) {
+            if (httpUrlConnection.getResponseCode() == HttpURLConnection.HTTP_OK) {
                 inputStream = httpUrlConnection.getInputStream();
                 jsonResponse = readFromInputStream(inputStream);
             } else {
