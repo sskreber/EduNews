@@ -102,7 +102,6 @@ public class NewsActivity extends AppCompatActivity implements LoaderManager.Loa
 
         uriBuilder.appendQueryParameter("page-size", MAX_PAGE_SIZE_SET_BY_GUARDIAN);
         uriBuilder.appendQueryParameter("api-key", myApiKey);
-//        "d851c653-799c-4661-a220-68f7661653c6"
         return new NewsLoader(this, uriBuilder.toString());
     }
 

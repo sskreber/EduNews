@@ -40,18 +40,18 @@ public class SettingsActivity extends AppCompatActivity {
         }
 
         @Override
-        public boolean onPreferenceChange(Preference preference, Object value) {
-            String stringValue = value.toString();
+        public boolean onPreferenceChange(Preference preference, Object preferredValue) {
+            String preferredValueString = preferredValue.toString();
 
             if (preference instanceof ListPreference) {
                 ListPreference listPreference = (ListPreference) preference;
-                int prefIndex = listPreference.findIndexOfValue(stringValue);
+                int prefIndex = listPreference.findIndexOfValue(preferredValueString);
                 if (prefIndex >= 0) {
                     CharSequence[] labels = listPreference.getEntries();
                     preference.setSummary(labels[prefIndex]);
                 }
             } else {
-                preference.setSummary(stringValue);
+                preference.setSummary(preferredValueString);
             }
             return true;
         }
