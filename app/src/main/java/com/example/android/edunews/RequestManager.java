@@ -61,9 +61,9 @@ public final class RequestManager {
 
                 JSONObject currentNews = newsArray.getJSONObject(i);
 
-                String title = currentNews.getString("webTitle");
-                String section = currentNews.getString("sectionName");
-                String publicationDate = americanizeDateFormat(trimPublicationTimeToDateOnly(currentNews.getString("webPublicationDate")));
+                String title = currentNews.optString("webTitle");
+                String section = currentNews.optString("sectionName");
+                String publicationDate = americanizeDateFormat(trimPublicationTimeToDateOnly(currentNews.optString("webPublicationDate")));
                 String url = currentNews.getString("webUrl");
 
                 if (authorOrSourceExistsAtEndOfTitle(title)) {
