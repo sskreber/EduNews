@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">EduNews</string>
+    <string name="app_name">EduNews+</string>
     <string name="no_news">No news articles found. </string>
     <string name="no_internet_connection">Oops! Check your internet connection&#8230;</string>
 
@@ -93,7 +93,7 @@
     <string name="settings_world_label">World</string>
     <string name="settings_world_value" translatable="false">world</string>
 
-    <string name="settings_education_label">Education</string>
+    <string name="settings_education_label">EDUCATION</string>
     <string name="settings_education_value" translatable="false">education</string>
 
     <string name="settings_business_label">Business</string>
