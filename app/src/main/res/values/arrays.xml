@@ -1,6 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string-array name="settings_year_labels">
+        <item>@string/settings_2018_label</item>
+        <item>@string/settings_2017_label</item>
+        <item>@string/settings_2016_label</item>
+        <item>@string/settings_2015_label</item>
+        <item>@string/settings_2014_label</item>
+        <item>@string/settings_2013_label</item>
+        <item>@string/settings_2012_label</item>
+        <item>@string/settings_2011_label</item>
+        <item>@string/settings_2010_label</item>
+        <item>@string/settings_2009_label</item>
+        <item>@string/settings_2008_label</item>
+        <item>@string/settings_2007_label</item>
+        <item>@string/settings_2006_label</item>
+        <item>@string/settings_2005_label</item>
+        <item>@string/settings_2004_label</item>
+        <item>@string/settings_2003_label</item>
+        <item>@string/settings_2002_label</item>
+        <item>@string/settings_2001_label</item>
+        <item>@string/settings_2000_label</item>
+        <item>@string/settings_1999_label</item>
+
+    </string-array>
+
+    <string-array name="settings_year_values">
+        <item>@string/settings_2018_value</item>
+        <item>@string/settings_2017_value</item>
+        <item>@string/settings_2016_value</item>
+        <item>@string/settings_2015_value</item>
+        <item>@string/settings_2014_value</item>
+        <item>@string/settings_2013_value</item>
+        <item>@string/settings_2012_value</item>
+        <item>@string/settings_2011_value</item>
+        <item>@string/settings_2010_value</item>
+        <item>@string/settings_2009_value</item>
+        <item>@string/settings_2008_value</item>
+        <item>@string/settings_2007_value</item>
+        <item>@string/settings_2006_value</item>
+        <item>@string/settings_2005_value</item>
+        <item>@string/settings_2004_value</item>
+        <item>@string/settings_2003_value</item>
+        <item>@string/settings_2002_value</item>
+        <item>@string/settings_2001_value</item>
+        <item>@string/settings_2000_value</item>
+        <item>@string/settings_1999_value</item>
+    </string-array>
+
     <string-array name="settings_section_labels">
         <item>@string/settings_business_label</item>
         <item>@string/settings_culture_label</item>

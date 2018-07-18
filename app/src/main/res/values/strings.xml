@@ -1,12 +1,76 @@
 <resources>
     <string name="app_name">EduNews</string>
-
     <string name="no_news">No news articles found. </string>
-
     <string name="no_internet_connection">Oops! Check your internet connection&#8230;</string>
 
     <string name="settings_menu_item">Settings</string>
     <string name="settings_title">News Settings</string>
+
+    <!-- for year preferences: labels for each year[CHAR LIMIT=4] -->
+
+    <string name="settings_year_label">Starting from year</string>
+    <string name="settings_year_key" translatable="false">year</string>
+    <string name="settings_year_default" translatable="false">2018</string>
+
+    <string name="settings_2018_label">2018</string>
+    <string name="settings_2018_value" translatable="false">2018</string>
+
+    <string name="settings_2017_label">2017</string>
+    <string name="settings_2017_value" translatable="false">2017</string>
+
+    <string name="settings_2016_label">2016</string>
+    <string name="settings_2016_value" translatable="false">2016</string>
+
+    <string name="settings_2015_label">2015</string>
+    <string name="settings_2015_value" translatable="false">2015</string>
+
+    <string name="settings_2014_label">2014</string>
+    <string name="settings_2014_value" translatable="false">2014</string>
+
+    <string name="settings_2013_label">2013</string>
+    <string name="settings_2013_value" translatable="false">2013</string>
+
+    <string name="settings_2012_label">2012</string>
+    <string name="settings_2012_value" translatable="false">2012</string>
+
+    <string name="settings_2011_label">2011</string>
+    <string name="settings_2011_value" translatable="false">2011</string>
+
+    <string name="settings_2010_label">2010</string>
+    <string name="settings_2010_value" translatable="false">2010</string>
+
+    <string name="settings_2009_label">2009</string>
+    <string name="settings_2009_value" translatable="false">2009</string>
+
+    <string name="settings_2008_label">2008</string>
+    <string name="settings_2008_value" translatable="false">2008</string>
+
+    <string name="settings_2007_label">2007</string>
+    <string name="settings_2007_value" translatable="false">2007</string>
+
+    <string name="settings_2006_label">2006</string>
+    <string name="settings_2006_value" translatable="false">2006</string>
+
+    <string name="settings_2005_label">2005</string>
+    <string name="settings_2005_value" translatable="false">2005</string>
+
+    <string name="settings_2004_label">2004</string>
+    <string name="settings_2004_value" translatable="false">2004</string>
+
+    <string name="settings_2003_label">2003</string>
+    <string name="settings_2003_value" translatable="false">2003</string>
+
+    <string name="settings_2002_label">2002</string>
+    <string name="settings_2002_value" translatable="false">2002</string>
+
+    <string name="settings_2001_label">2001</string>
+    <string name="settings_2001_value" translatable="false">2001</string>
+
+    <string name="settings_2000_label">2000</string>
+    <string name="settings_2000_value" translatable="false">2000</string>
+
+    <string name="settings_1999_label">1999</string>
+    <string name="settings_1999_value" translatable="false">1999</string>
 
     <!-- for section preferences: labels for each news section[CHAR LIMIT=20] -->
 

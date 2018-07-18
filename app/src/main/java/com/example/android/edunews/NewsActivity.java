@@ -73,6 +73,11 @@ public class NewsActivity extends AppCompatActivity implements LoaderManager.Loa
     public Loader<List<News>> onCreateLoader(int i, Bundle bundle) {
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this);
 
+        String chosenYear = sharedPrefs.getString(
+                getString(R.string.settings_year_key),
+                getString(R.string.settings_year_default)
+        );
+
         String chosenSection = sharedPrefs.getString(
                 getString(R.string.settings_section_key),
                 getString(R.string.settings_section_default)
@@ -90,12 +95,12 @@ public class NewsActivity extends AppCompatActivity implements LoaderManager.Loa
         uriBuilder.appendQueryParameter("show-fields", "all");
         uriBuilder.appendQueryParameter("section", chosenSection);
         uriBuilder.appendQueryParameter("order-by", orderBy);
-        uriBuilder.appendQueryParameter("from-date", "2014-01-01");
+        uriBuilder.appendQueryParameter("from-date", chosenYear + "-01-01");
+        
         uriBuilder.appendQueryParameter("page-size", "200");
         uriBuilder.appendQueryParameter("api-key", "d851c653-799c-4661-a220-68f7661653c6");
 
         return new NewsLoader(this, uriBuilder.toString());
-
     }
 
     @Override

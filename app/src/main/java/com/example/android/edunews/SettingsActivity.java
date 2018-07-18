@@ -22,6 +22,9 @@ public class SettingsActivity extends AppCompatActivity {
             super.onCreate(savedInstanceState);
             addPreferencesFromResource(R.xml.settings_main);
 
+            Preference chosenYear = findPreference(getString(R.string.settings_year_key));
+            bindPreferenceSummaryToValue(chosenYear);
+
             Preference chosenSection = findPreference(getString(R.string.settings_section_key));
             bindPreferenceSummaryToValue(chosenSection);
 
