@@ -64,7 +64,7 @@ public final class RequestManager {
                 String title = currentNews.optString("webTitle");
                 String section = currentNews.optString("sectionName");
                 String publicationDate = americanizeDateFormat(trimPublicationTimeToDateOnly(currentNews.optString("webPublicationDate")));
-                String url = currentNews.getString("webUrl");
+                String url = currentNews.optString("webUrl");
 
                 if (authorOrSourceExistsAtEndOfTitle(title)) {
                     newsArticles.add(new News(returnTitleWithoutAuthorOrSourceAtItsEnd(title), section, publicationDate, url, getAuthorOrSourceFromEndOfTitle(title)));
